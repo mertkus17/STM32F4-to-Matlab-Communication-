@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp
+"serialtomatlabstm\startup_stm32f407xx.o"
+"serialtomatlabstm\main.o"
+"serialtomatlabstm\stm32f4xx_it.o"
+"serialtomatlabstm\stm32f4xx_hal_msp.o"
+"serialtomatlabstm\stm32f4xx_hal_tim.o"
+"serialtomatlabstm\stm32f4xx_hal_tim_ex.o"
+"serialtomatlabstm\stm32f4xx_hal_uart.o"
+"serialtomatlabstm\stm32f4xx_hal_rcc.o"
+"serialtomatlabstm\stm32f4xx_hal_rcc_ex.o"
+"serialtomatlabstm\stm32f4xx_hal_flash.o"
+"serialtomatlabstm\stm32f4xx_hal_flash_ex.o"
+"serialtomatlabstm\stm32f4xx_hal_flash_ramfunc.o"
+"serialtomatlabstm\stm32f4xx_hal_gpio.o"
+"serialtomatlabstm\stm32f4xx_hal_dma_ex.o"
+"serialtomatlabstm\stm32f4xx_hal_dma.o"
+"serialtomatlabstm\stm32f4xx_hal_pwr.o"
+"serialtomatlabstm\stm32f4xx_hal_pwr_ex.o"
+"serialtomatlabstm\stm32f4xx_hal_cortex.o"
+"serialtomatlabstm\stm32f4xx_hal.o"
+"serialtomatlabstm\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "serialtomatlabstm\serialtomatlabstm.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "serialtomatlabstm.map" -o serialtomatlabstm\serialtomatlabstm.axf
